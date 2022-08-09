@@ -11,7 +11,7 @@ jobs:
         with:
           envkey_POSTGRES_USER: "postgres"
           envkey_POSTGRES_PASSWORD: "123"
-          envkey_POSTGRES_DB: "github-ci-cd"
+          envkey_POSTGRES_DB: "github-ci-cd_tests"
           envkey_DATABASE_URL: "postgres://postgres:123@db_postgres_github-ci-cd:5432/github-ci-cd_tests"
           file_name: .env.test
       - name: Run tests
