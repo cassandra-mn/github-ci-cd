@@ -17,4 +17,4 @@ jobs:
           heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
           heroku_email: ${{secrets.HEROKU_EMAIL}}
       - name: Run deploy  
-        run: docker-compose -f docker-compose.yml run node_app_github-ci-cd npm run start
+        run: docker-compose -f docker-compose.yml up
